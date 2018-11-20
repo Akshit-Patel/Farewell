@@ -1,0 +1,176 @@
+body
+{
+	margin: 0;
+	background-color: black;
+    color: white;
+    position:relative;
+    font-family:  'Myriad_pro';
+    height:100vh;
+    width:100vw;
+}
+@font-face {
+    font-family: Franklin_gothic;
+    src: url(fonts/framdit2.ttf);
+}
+@font-face {
+    font-family: Myriad_pro;
+    src: url("fonts/myriad/Myriad Pro Regular.ttf");
+}
+@font-face {
+    font-family: American_captain;
+    src: url("fonts/American Captain Patrius 02 FRE.otf");
+}
+#heading
+{
+  display: block;
+  position:absolute;
+  top:0;
+  left:0;
+  height:5vw;
+  width:42vw;
+  background-color: #00ffff;
+  color: black;
+  font-size:4vw; 
+  border-radius:8px; 
+  text-align: center;
+}
+.container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55vw;
+	width: 100vw;
+	position: relative;
+	margin: 0;
+	top:10.5vh;
+
+}
+.container div
+{
+	position: absolute;
+}
+.container #photo
+{   display:block;
+	background-image: url("images/0.jpg");
+	background-size: cover;
+	border-radius: 50%;
+    border: 5px solid #00ffff;
+    width:30vw;
+    height:30vw;
+    margin:0;
+    left:6vw;
+    top:4vh;
+}
+.container #text
+{
+	display: block;
+	right: 3vw;
+	height:12.5vw;
+	width: 62vw;
+	text-align: center;
+	top: 16.5vh;
+}
+.container #text #team_Name
+{   
+	
+	display: block;
+	font-size:2.5vw;
+    height:3.2vw;
+    border-bottom: 3px solid white;
+    width:13vw;
+    right: 35vw;
+    top: -0.8vw;
+    /*padding-bottom: 0px;*/
+    text-align: center;
+    /*box-sizing: content-box;*/
+}
+.container #text #name1
+{
+	display: block;
+	font-family:American_captain;
+	font-size:5vw;
+	color:white;
+	right:12vw;
+	top: 5vh;
+}
+.container #text #name2
+{
+	display: block;
+	font-family:American_captain;
+	font-size:5vw;
+	color:white;
+	right:11.5vw;
+	top: 16vh;
+	color:#00ffff;
+}
+.container #text #underline
+{
+	display:block;
+	width:11vw;
+	height:2vh;
+	border-bottom: white solid 4px;
+	border-radius: 2px;
+	right:4vw;
+	top:28vh;
+}
+.container #text #icon_next 
+{
+font-size: 5vw;
+display: block;
+ position:absolute;
+ right:4vw;
+ top:13vh;
+}
+.container #text #icon_previous 
+{
+font-size: 5vw;
+display: block;
+position:absolute;
+right:42vw;
+top:13vh;	
+}
+.bottom{
+position: absolute;
+display: block;
+height: 2.5vh;
+width: 100vw;
+top:80vh;
+}
+.bottom div
+{
+	position: absolute;
+	color:white;
+}
+.bottom #randomText
+{
+   font-size: 3vw;
+   left: 7.5vw;
+   font-family: Franklin_gothic;
+
+}
+.bottom #venue1
+{
+   font-family: Franklin_gothic;
+   font-size:2.5vw;
+   right: 18vw;
+
+}
+.bottom #venue2
+{
+    font-family: Franklin_gothic;
+    color: #00ffff;
+    font-size:2.5vw;
+    right: 15vw;
+}
+.bottom #venue3
+{
+    font-family: Franklin_gothic;
+    right:5vw;
+    font-size:2.5vw;
+}
+@media (max-width: 500px) 
+{
+  
+}
+
