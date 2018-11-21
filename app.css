@@ -82,7 +82,7 @@ body
     top:4vh;
 }
 .container #photo_float
-{ display:none;
+{ display:block;
   background-image: url("images/1.jpg");
   background-size: cover;
   border-radius: 50%;

@@ -1,10 +1,10 @@
 var script = document.getElementById("script");
 var nexBtn = document.getElementById("icon_next");       
 var previousBtn = document.getElementById("icon_previous");
-var photo= document.getElementById("photo");
 var name1 = document.getElementById("name1");
 var name2= document.getElementById("name2");
 var team_Name= document.getElementById("team_Name");
+var photo= document.getElementById("photo");
 var photo_float=document.getElementById("photo_float");
 const numEvents = 4;
 var currentEvent = 0;
@@ -45,6 +45,7 @@ else if(currentEvent == 3 && change>=0)
     float =float+change;
    }
 
+
 }
 function mod(a, b){
     if (a < 0){
@@ -54,25 +55,22 @@ function mod(a, b){
         return (a % b);
     }
 }
-function initialPosition()
-{
-
-}
 function previous()
 {
+
 	imageChange(1);
-	photo.style.backgroundImage = "url(images/"+currentEvent+".jpg)";
     photo_float.style.backgroundImage = "url(images/"+float+".jpg)";
 	photo_float.style.animation="switch 0.5s linear forwards";
 	name1.innerHTML=farewell.details.name1[currentEvent];
 	name2.innerHTML=farewell.details.name2[currentEvent];
 	team_Name.innerHTML=farewell.team_name[currentEvent];
-    // setTimeout(function() {
-    // photo.style.backgroundImage = "url(images/"+currentEvent+".jpg)";
-
-    // }, 500);
+    setTimeout(function() {
+   photo.style.backgroundImage = "url(images/"+currentEvent+".jpg)";
+photo_float.id = "float";
+  float.id="photo_float";
+    }, 500);
 	
-
+  
 	
 }
 function next()
