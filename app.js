@@ -8,7 +8,7 @@ var team_Name= document.getElementById("team_Name");
 var photo_float=document.getElementById("photo_float");
 const numEvents = 4;
 var currentEvent = 0;
-var float= 1;
+var float= 0;
 var farewell=
 {
     team_name:["Frontend","Design", "Backend","AppD"],
@@ -30,19 +30,21 @@ function keyMove(){
 function imageChange(change){
     currentEvent += change;
     currentEvent = mod(currentEvent, numEvents);
+    var x=numEvents-1;
    if(currentEvent == 0 && change<=0)
    {
      float = numEvents-1;
    }
-else if(currentEvent == (numEvents-1) && change>=0)
+
+else if(currentEvent == 3 && change>=0)
    { 
     float = 0;
    }
    else
    {
-    float = currentEvent+ change;
+    float =float+change;
    }
-photo_float.style.backgroundImage = "url(images/"+float+".jpg)";
+
 }
 function mod(a, b){
     if (a < 0){
@@ -60,9 +62,18 @@ function previous()
 {
 	imageChange(1);
 	photo.style.backgroundImage = "url(images/"+currentEvent+".jpg)";
+    photo_float.style.backgroundImage = "url(images/"+float+".jpg)";
+	photo_float.style.animation="switch 0.5s linear forwards";
 	name1.innerHTML=farewell.details.name1[currentEvent];
 	name2.innerHTML=farewell.details.name2[currentEvent];
 	team_Name.innerHTML=farewell.team_name[currentEvent];
+    // setTimeout(function() {
+    // photo.style.backgroundImage = "url(images/"+currentEvent+".jpg)";
+
+    // }, 500);
+	
+
+	
 }
 function next()
 {
@@ -71,6 +82,7 @@ function next()
 	name1.innerHTML=farewell.details.name1[currentEvent];
 	name2.innerHTML=farewell.details.name2[currentEvent];
 	team_Name.innerHTML=farewell.team_name[currentEvent];
+
 }
 nexBtn.addEventListener("click", function()
 	{
