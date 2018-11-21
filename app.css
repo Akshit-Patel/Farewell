@@ -1,16 +1,21 @@
 body
 {
-	margin: 0;
-	background-color: black;
+  margin: 0;
+  background-color: black;
     color: white;
     position:relative;
     font-family:  'Myriad_pro';
     height:100vh;
     width:100vw;
+    overflow: hidden;
 }
 @font-face {
     font-family: Franklin_gothic;
     src: url(fonts/framdit2.ttf);
+}
+@font-face {
+    font-family: Franklin_gothic1;
+    src: url(fonts/framdit.ttf);
 }
 @font-face {
     font-family: Myriad_pro;
@@ -36,46 +41,77 @@ body
 }
 .container
 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 55vw;
-	width: 100vw;
-	position: relative;
-	margin: 0;
-	top:10.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vw;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+  top:10.5vh;
 
 }
 .container div
 {
-	position: absolute;
+  position: absolute;
+}
+
+.container #holder
+{
+  position: absolute ;
+  top: 1vh;
+  left: -0.25vw;
+  width:40vw;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 3vw;
 }
 .container #photo
-{   display:block;
-	background-image: url("images/0.jpg");
-	background-size: cover;
-	border-radius: 50%;
-    border: 5px solid #00ffff;
+{ display:block;
+  background-image: url("images/0.jpg");
+  background-size: cover;
+  border-radius: 50%;
+   border: 5px solid #00ffff;
     width:30vw;
     height:30vw;
     margin:0;
     left:6vw;
     top:4vh;
 }
+.container #photo_float
+{ display:none;
+  background-image: url("images/1.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px solid #00ffff;
+  width:30vw;
+  height:30vw;
+  margin:0;
+   left:6vw;
+   top:4vh;
+}
+@keyframes switch {
+    from { display: block;
+    }
+    to {background-color: yellow;}
+}
+
 .container #text
 {
-	display: block;
-	right: 3vw;
-	height:12.5vw;
-	width: 62vw;
-	text-align: center;
-	top: 16.5vh;
+  display: block;
+  right: 3vw;
+  height:12.5vw;
+  width: 62vw;
+  text-align: center;
+  top: 16.5vh;
 }
 .container #text #team_Name
 {   
-	
-	display: block;
-	font-size:2.5vw;
+  
+  display: block;
+  font-size:2.5vw;
     height:3.2vw;
     border-bottom: 3px solid white;
     width:13vw;
@@ -87,32 +123,32 @@ body
 }
 .container #text #name1
 {
-	display: block;
-	font-family:American_captain;
-	font-size:5vw;
-	color:white;
-	right:12vw;
-	top: 5vh;
+  display: block;
+  font-family:American_captain;
+  font-size:5vw;
+  color:white;
+  right:12vw;
+  top: 5vh;
 }
 .container #text #name2
 {
-	display: block;
-	font-family:American_captain;
-	font-size:5vw;
-	color:white;
-	right:11.5vw;
-	top: 16vh;
-	color:#00ffff;
+  display: block;
+  font-family:American_captain;
+  font-size:5vw;
+  color:white;
+  right:11.5vw;
+  top: 16vh;
+  color:#00ffff;
 }
 .container #text #underline
 {
-	display:block;
-	width:11vw;
-	height:2vh;
-	border-bottom: white solid 4px;
-	border-radius: 2px;
-	right:4vw;
-	top:28vh;
+  display:block;
+  width:11vw;
+  height:2vh;
+  border-bottom: white solid 4px;
+  border-radius: 2px;
+  right:4vw;
+  top:28vh;
 }
 .container #text #icon_next 
 {
@@ -128,7 +164,7 @@ font-size: 5vw;
 display: block;
 position:absolute;
 right:42vw;
-top:13vh;	
+top:13vh; 
 }
 .bottom{
 position: absolute;
@@ -139,8 +175,8 @@ top:80vh;
 }
 .bottom div
 {
-	position: absolute;
-	color:white;
+  position: absolute;
+  color:white;
 }
 .bottom #randomText
 {
@@ -170,7 +206,165 @@ top:80vh;
     font-size:2.5vw;
 }
 @media (max-width: 500px) 
+{#heading
 {
+  display: block;
+  position:absolute;
+  top:0;
+  left:0;
+  height:10vh;
+  width:100vw;
+  background-color: #000000;
+  color: white;
+  font-size:12vw; 
+  border-radius:0; 
+  text-align: center;
+}
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  margin: 0;
+  top:10.5vh;
+}
+.container div
+{
+  position: absolute;
+}
+.container #photo
+{   display:block;
+  background-image: url("images/0.jpg");
+  background-size: cover;
+  border-radius: 50%;
+    border: 5px solid #00ffff;
+    width:70vw;
+    height:70vw;
+    margin:0;
+    left:12vw;
+    top:5vh;
+}
+.container #text
+{
+  display: block;
+  right: inherit;
+  left: -10vh;
+  height:inherit;
+  width: 100vw;
+  text-align: center;
+  top: 43vh;
+}
+.container #text #team_Name
+{   
+  
+  display: block;
+  font-size:3.5vh;
+    height:5vh;
+    border-bottom: 3px solid white;
+    left:10vh;
+    right:13vw;
+    top: 12vw;
+    width:24vw;
+    /*padding-bottom: 0px;*/
+    text-align: center;
+    /*box-sizing: content-box;*/
+    font-family:Franklin_gothic1;
+    color: #00ffff;
+}
+.container #text #name1
+{
+  display: block;
+  font-family:Franklin_gothic1;
+  font-size:8vh;
+  color:white;
+  right:-1vh;
+  top: 8vh;
   
 }
 
+
+.container #text #name2
+{
+  display: block;
+  font-family:Franklin_gothic1;
+  font-size:8vh;
+  color:white;
+  right:8.5vw;
+  top: 16vh;
+  color:#00ffff;
+}
+.container #text #underline
+{
+  display:block;
+  width:22vh;
+  height:2vh;
+  border-bottom: white solid 4px;
+  border-radius: 2px;
+  right:-18vw;
+  top:23vh;
+}
+.container #text #icon_next 
+{
+font-size:4.5vh;
+display: block;
+ position:absolute;
+ right:-5vh;
+ top:17.5vh;
+}
+.container #text #icon_previous 
+{
+font-size: 4.5vh;
+display: block;
+position:absolute;
+right:40vh;
+top:17.5vh; 
+}
+.bottom{
+position: absolute;
+display: block;
+height: 2.5vh;
+width: 100vw;
+top:80vh;
+}
+.bottom div
+{
+  position: absolute;
+  color:white;
+}
+.bottom #randomText
+{
+   font-size: 3vh;
+   left: 0vw;
+   font-style: italic;
+   font-family: Franklin_gothic1;
+   background-color:#757575;
+   padding: 01vw;
+   top: -70.5vh;
+
+}
+.bottom #venue1
+{
+   font-family: Franklin_gothic1;
+   font-size:4vh;
+   right: 33vh;
+   top: 6vh;
+}
+.bottom #venue2
+{
+    font-family: Franklin_gothic1;
+    color: #00ffff;
+    font-size:4vh;
+    right:28vh;
+    top: 6vh;
+}
+.bottom #venue3
+{
+    font-family: Franklin_gothic1;
+    right:13vh;
+    font-size:4vh;
+   top: 6vh;  
+}
+}
