@@ -68,7 +68,8 @@ function previous()
 {
 
   imageChange(1);
-  // if (currentEvent === 0) { document.getElementById("size").style.fontSize = "6.5vh"};
+  // if (currentEvent == 0) { name1.style.fontSize = "7vh"; name2.style.fontSize = "7vh"}
+  // else if (currentEvent != 0) { name1.style.fontSize = "5vw"; name2.style.fontSize = "5vw"};
 
   name1.innerHTML=farewell.details.name1[currentEvent];
   name2.innerHTML=farewell.details.name2[currentEvent];
@@ -85,7 +86,8 @@ else{
 function next()
 {
   imageChange(-1);
-  // if (currentEvent === 0) { document.getElementById("size").style.fontSize = "6.5vh"};
+  // if (currentEvent == 0) { name1.style.fontSize = "7vh"; name2.style.fontSize = "7vh"}
+  // else if (currentEvent != 0) { name1.style.fontSize = "5vw"; name2.style.fontSize = "5vw"};
 
   name1.innerHTML=farewell.details.name1[currentEvent];
   name2.innerHTML=farewell.details.name2[currentEvent];
