@@ -19,8 +19,8 @@ var farewell=
 {
     team_name:["Backend","FrontEnd", "Backend","Video","App","Design"],
     details: {
-    	name1:["JOhhny1", "Partho 2", "Johhny 3","Johhny 4", "Johnny 5 ", "Johhny 6"],
-    	name2:["English 1", "English 2", "English 3", "English 4", "English 5", "English 6"],
+      name1:["Amritanshu", "Partho", "Deppak","Akaash", "Aditya ", "Rajat"],
+      name2:["Jain", "Sarthi", "Kar", "Manna", "Raj", "Thakur"],
     },
     photos: [photo0, photo1, photo2, photo3, photo4, photo5]
 }
@@ -67,10 +67,10 @@ function mod(a, b){
 function previous()
 {
 
-	imageChange(1);
-	name1.innerHTML=farewell.details.name1[currentEvent];
-	name2.innerHTML=farewell.details.name2[currentEvent];
-	team_Name.innerHTML=farewell.team_name[currentEvent];	
+  imageChange(1);
+  name1.innerHTML=farewell.details.name1[currentEvent];
+  name2.innerHTML=farewell.details.name2[currentEvent];
+  team_Name.innerHTML=farewell.team_name[currentEvent]; 
 
  setTimeout(function(){ farewell.photos[currentEvent].style.animation="enter 0.5s forwards";},500);
  if(currentEvent!=0)
@@ -82,10 +82,10 @@ else{
 
 function next()
 {
-	imageChange(-1);
-	name1.innerHTML=farewell.details.name1[currentEvent];
-	name2.innerHTML=farewell.details.name2[currentEvent];
-	team_Name.innerHTML=farewell.team_name[currentEvent];
+  imageChange(-1);
+  name1.innerHTML=farewell.details.name1[currentEvent];
+  name2.innerHTML=farewell.details.name2[currentEvent];
+  team_Name.innerHTML=farewell.team_name[currentEvent];
    setTimeout(function(){ farewell.photos[currentEvent].style.animation="enter 0.5s forwards";},500);
    console.log(currentEvent);
  if(currentEvent == 5)
@@ -96,15 +96,15 @@ else{
   
 }
 nexBtn.addEventListener("click", function()
-	{
-		previous();
-	}
-	);
+  {
+    previous();
+  }
+  );
 previousBtn.addEventListener("click", function()
-	{
-		next();
-	}
-	);
+  {
+    next();
+  }
+  );
 var initalX = null;
 var initialY=null;
  
@@ -132,10 +132,10 @@ function moveTouch(e) {
     // sliding horizontally
     if (diffX > 0) {
       // swiped left
-    previous();
+    next();
     } else {
       // swiped right
-      next();
+      previous();
     }  
   } 
   initialX = null;
