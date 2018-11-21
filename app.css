@@ -123,6 +123,7 @@ body
     left:4.75vw;
     top:4vh;
    opacity:0;
+   background-position: -800% 0%;
 }
 .container #photo4
 { display:block;
@@ -305,7 +306,7 @@ top:80vh;
   position:absolute;
   top:0.5vh;
   left:0;
-  height:10vh;
+  height:8vh;
   width:100vw;
   background-color: #000000;
   color: white;
@@ -344,7 +345,6 @@ top:80vh;
 }
 .container #photo0
 {   display:block;
-
   background-size: cover;
   border-radius: 50%;
     border: 5px solid #00ffff;
@@ -356,7 +356,6 @@ top:80vh;
 }
 .container #photo1
 {   display:block;
-  
   background-size: cover;
   border-radius: 50%;
     border: 5px solid #00ffff;
