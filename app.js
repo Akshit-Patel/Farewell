@@ -19,7 +19,11 @@ var farewell=
 {
     team_name:["Backend","FrontEnd", "Backend","Video","App","Design"],
     details: {
+<<<<<<< HEAD
+      name1:["Amritanshu", "Partho", "Deppak","Akaash", "Aditya ", "Rajat"],
+=======
       name1:["Amritanshu", "Partho", "Deepak","Akaash", "Aditya ", "Rajat"],
+>>>>>>> origin/gh-pages
       name2:["Jain", "Sarthi", "Kar", "Manna", "Raj", "Thakur"],
     },
     photos: [photo0, photo1, photo2, photo3, photo4, photo5]
@@ -68,6 +72,9 @@ function previous()
 {
 
   imageChange(1);
+  // if (currentEvent == 0) { name1.style.fontSize = "7vh"; name2.style.fontSize = "7vh"}
+  // else if (currentEvent != 0) { name1.style.fontSize = "5vw"; name2.style.fontSize = "5vw"};
+
   name1.innerHTML=farewell.details.name1[currentEvent];
   name2.innerHTML=farewell.details.name2[currentEvent];
   team_Name.innerHTML=farewell.team_name[currentEvent]; 
@@ -83,6 +90,9 @@ else{
 function next()
 {
   imageChange(-1);
+  // if (currentEvent == 0) { name1.style.fontSize = "7vh"; name2.style.fontSize = "7vh"}
+  // else if (currentEvent != 0) { name1.style.fontSize = "5vw"; name2.style.fontSize = "5vw"};
+
   name1.innerHTML=farewell.details.name1[currentEvent];
   name2.innerHTML=farewell.details.name2[currentEvent];
   team_Name.innerHTML=farewell.team_name[currentEvent];
