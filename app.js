@@ -17,9 +17,11 @@ var farewell=
     	name2:["English 1", "English 2", "English 3", "English 4"],
     }
 }
+
 script.addEventListener("load", function(){
   window.addEventListener("keydown", keyMove);
 });
+
 function keyMove(){
     if (window.event.key == "s" || window.event.key == "a" || window.event.key == "ArrowDown" || window.event.key == "ArrowLeft"){
        next();
@@ -27,26 +29,19 @@ function keyMove(){
        previous();
     }
 }
+
 function imageChange(change){
     currentEvent += change;
     currentEvent = mod(currentEvent, numEvents);
     var x=numEvents-1;
-   if(currentEvent == 0 && change<=0)
-   {
-     float = numEvents-1;
-   }
+    
+   	if(currentEvent == 0 && change<=0) { float = numEvents-1;}
 
-else if(currentEvent == 3 && change>=0)
-   { 
-    float = 0;
-   }
-   else
-   {
-    float =float+change;
-   }
+	else if(currentEvent == 3 && change>=0) { float = 0;}
 
-
+   	else { float =float+change;}
 }
+
 function mod(a, b){
     if (a < 0){
         a %= b;
@@ -55,41 +50,68 @@ function mod(a, b){
         return (a % b);
     }
 }
+
 function previous()
 {
-
 	imageChange(1);
+
     photo_float.style.backgroundImage = "url(images/"+float+".jpg)";
 	photo_float.style.animation="switch 0.5s linear forwards";
 	name1.innerHTML=farewell.details.name1[currentEvent];
 	name2.innerHTML=farewell.details.name2[currentEvent];
 	team_Name.innerHTML=farewell.team_name[currentEvent];
+
     setTimeout(function() {
-   photo.style.backgroundImage = "url(images/"+currentEvent+".jpg)";
-photo_float.id = "float";
-  float.id="photo_float";
+   		photo.style.backgroundImage = "url(images/"+currentEvent+".jpg)";
+		photo_float.id = "float";
+  		float.id="photo_float";
     }, 500);
 	
-  
-	
 }
+
 function next()
 {
 	imageChange(-1);
 	photo.style.backgroundImage = "url(images/"+currentEvent+".jpg)";
-	name1.innerHTML=farewell.details.name1[currentEvent];
-	name2.innerHTML=farewell.details.name2[currentEvent];
-	team_Name.innerHTML=farewell.team_name[currentEvent];
+	name1.innerHTML = farewell.details.name1[currentEvent];
+	name2.innerHTML = farewell.details.name2[currentEvent];
+	team_Name.innerHTML = farewell.team_name[currentEvent];
 
 }
+
 nexBtn.addEventListener("click", function()
 	{
 		previous();
-	}
-	);
+	});
+
 previousBtn.addEventListener("click", function()
 	{
 		next();
-	}
-	);
+	});
+
+// Slider Code ------------------------------------
+
+// let index = 1;
+// displayDiv(index);
+
+// function nextDiv(n) {
+// 	displayDiv(index += n);
+// }
+
+// function displayDiv(n) {
+// 	let i;
+
+// 	let x = document.getElementsByClassName("pic");
+// 	if (n > x.length) {index = 1};
+// 	else if ( n < 1) { index = x.length};
+
+// 	for (let i = 0; i < x.length; i++) {
+// 		x[i].style.display = "none";
+// 	}
+// 	x[index-1].style.display = "block";
+
+// }
+
+// ---------------------------------------------
+
 

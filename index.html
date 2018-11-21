@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Farewell</title>
@@ -7,36 +8,37 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
+
 <body>
+
 <div  id="heading">Farewell '18</div>
+
 <div class="container">
-	<div id="holder"><div id="photo">
+
+	<div id="holder">
+		<div id="photo" class = "pic"></div>
+		<div id="photo_float"></div>
 	</div>
-	<div id="photo_float">	
-	</div>
-	</div>
+
 	<div id="text">
-		<div id="team_Name">
-		Frontend
-		</div>
-        <div id="name1">
-        Johnny 1
-        </div>
-        <div id="name2">
-        English 1
-        </div>
-        <div id="underline">
-        </div>
-        <div id="icon_next"><i class="fas fa-arrow-right"></i></div>
-    	<div id="icon_previous"><i class="fas fa-arrow-left"></i></div>
+		<div id="team_Name"> Frontend </div>
+        <div id="name1"> Johnny 1 </div>
+        <div id="name2"> English 1 </div>
+        <div id="underline"></div>
+        <div id="icon_next" onclick = "nextDiv(-1)"><i class="fas fa-arrow-right"></i></div>
+    	<div id="icon_previous" onclick = "nextDiv(1)"><i class="fas fa-arrow-left"></i></div>
 	</div>
+
 </div>
+
 <div class="bottom">
-<div id="randomText">#NoBodyDoesItBetter</div>
-<div id= "venue1">April 18</div>
-<div id= "venue2">|</div>
-<div id= "venue3">Kamal's</div>	
+	<div id="randomText">#NoBodyDoesItBetter</div>
+	<div id= "venue1">April 18</div>
+	<div id= "venue2">|</div>
+	<div id= "venue3">Kamal's</div>	
 </div>
+
 <script src="app.js" id="script"></script>
+
 </body>
 </html>
