@@ -28,14 +28,18 @@ body
 #heading
 {
   display: block;
+  font-family: 'Overpass';
   position:absolute;
-  top:0;
-  left:0;
+  /* top:0; */
+  top: 15px;
+  letter-spacing: 2px;
+  left:20px;
   height:5vw;
   width:42vw;
-  background-color: #00ffff;
-  color: black;
-  font-size:4vw; 
+  /* background-color: #00ffff; */
+  /* color: black; */
+  color: white;
+  font-size:5vw; 
   border-radius:8px; 
   text-align: center;
   z-index: -2;
@@ -50,7 +54,6 @@ body
   position: relative;
   margin: 0;
   top:10.5vh;
-
 }
 .container div
 {
@@ -221,8 +224,11 @@ body
   font-family:American_captain;
   font-size:5vw;
   color:white;
-  right:12vw;
+  right:20vw;
   top: 5vh;
+}
+#size {
+  font-size: 7vh;
 }
 .container #text #name2
 {
@@ -252,6 +258,12 @@ display: block;
  right:4vw;
  top:13vh;
 }
+.container #text #icon_next:hover {
+  cursor: pointer;
+}
+.container #text #icon_previous:hover {
+  cursor: pointer;
+}
 .container #text #icon_previous 
 {
 font-size: 5vw;
@@ -274,16 +286,17 @@ top:80vh;
 }
 .bottom #randomText
 {
-   font-size: 3vw;
-   left: 7.5vw;
-   font-family: Franklin_gothic;
-
+    font-size: 3vw;
+    left: 7.5vw;
+    font-family: Franklin_gothic;
+    border-radius: 0 3px 3px 0;
+    padding-top: 30px;
 }
 .bottom #venue1
 {
    font-family: Franklin_gothic;
    font-size:2.5vw;
-   right: 18vw;
+   right: 20vw;
 
 }
 .bottom #venue2
@@ -291,20 +304,20 @@ top:80vh;
     font-family: Franklin_gothic;
     color: #00ffff;
     font-size:2.5vw;
-    right: 15vw;
+    right: 17.3vw;
 }
 .bottom #venue3
 {
     font-family: Franklin_gothic;
-    right:5vw;
+    right:3.5vw;
     font-size:2.5vw;
 }
-@media (max-width: 500px) 
-{#heading
+@media all and (max-width: 500px) {
+  #heading
 {
   display: block;
   position:absolute;
-  top:0.5vh;
+  top:1.5vh;
   left:0;
   height:8vh;
   width:100vw;
@@ -461,11 +474,13 @@ top:80vh;
   font-family:Franklin_gothic1;
   font-size:8vh;
   color:white;
-  right:-1vh;
+  right:10vh;
   top: 8vh;
   
 }
-
+#size {
+  font-size: 6vh;
+}
 
 .container #text #name2
 {
@@ -523,7 +538,7 @@ top:80vh;
    font-family: Franklin_gothic1;
    background-color:#757575;
    padding: 01vw;
-   top: -70.5vh;
+   top: -68.5vh;
    z-index: -100;
 
 }
@@ -531,7 +546,7 @@ top:80vh;
 {
    font-family: Franklin_gothic1;
    font-size:4vh;
-   right: 33vh;
+   right: 52vw;
    top: 6vh;
 }
 .bottom #venue2
@@ -539,13 +554,13 @@ top:80vh;
     font-family: Franklin_gothic1;
     color: #00ffff;
     font-size:4vh;
-    right:28vh;
+    right:45vw;
     top: 6vh;
 }
 .bottom #venue3
 {
     font-family: Franklin_gothic1;
-    right:13vh;
+    right:7vw;
     font-size:4vh;
    top: 6vh;  
 }

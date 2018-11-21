@@ -68,6 +68,8 @@ function previous()
 {
 
   imageChange(1);
+  // if (currentEvent === 0) { document.getElementById("size").style.fontSize = "6.5vh"};
+
   name1.innerHTML=farewell.details.name1[currentEvent];
   name2.innerHTML=farewell.details.name2[currentEvent];
   team_Name.innerHTML=farewell.team_name[currentEvent]; 
@@ -83,6 +85,8 @@ else{
 function next()
 {
   imageChange(-1);
+  // if (currentEvent === 0) { document.getElementById("size").style.fontSize = "6.5vh"};
+
   name1.innerHTML=farewell.details.name1[currentEvent];
   name2.innerHTML=farewell.details.name2[currentEvent];
   team_Name.innerHTML=farewell.team_name[currentEvent];
