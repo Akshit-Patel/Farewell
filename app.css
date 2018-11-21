@@ -79,6 +79,7 @@ body
   background-size: cover;
   border-radius: 50%;
    border: 5px solid #00ffff;
+   background-position: center;
     width:30vw;
     height:30vw;
     margin:0;
@@ -96,6 +97,7 @@ body
     width:30vw;
     height:30vw;
     margin:0;
+    background-position: center;
     left:4.75vw;
     top:4vh;
    opacity:0;
@@ -108,6 +110,7 @@ body
    background-image: url("images/2.jpg");
    border: 5px solid #00ffff;
     width:30vw;
+  background-position: center; 
     height:30vw;
     margin:0;
     left:4.75vw;
@@ -121,6 +124,7 @@ body
    background-image: url("images/3.jpg");
    border: 5px solid #00ffff;
     width:30vw;
+  background-position: center;  
     height:30vw;
     margin:0;
     left:4.75vw;
@@ -135,6 +139,7 @@ body
    background-image: url("images/4.jpg");
    border: 5px solid #00ffff;
     width:30vw;
+  background-position: center; 
     height:30vw;
     margin:0;
     left:4.75vw;
@@ -146,6 +151,7 @@ body
   background-size: cover;
   border-radius: 50%;
    background-image: url("images/5.jpg");
+  background-position: center;
    border: 5px solid #00ffff;
     width:30vw;
     height:30vw;
@@ -334,7 +340,7 @@ top:80vh;
   justify-content: center;
   align-items: center;
   /*height: 100vh;*/
-  width: 100vw;
+ /* width: 100vw;*/
   position: relative;
   margin: 0;
   top:10.5vh;
