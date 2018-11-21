@@ -25,6 +25,10 @@ body
     font-family: American_captain;
     src: url("fonts/American Captain Patrius 02 FRE.otf");
 }
+::-webkit-scrollbar {
+  display: none;
+  }
+
 #heading
 {
   display: block;
