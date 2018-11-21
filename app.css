@@ -217,17 +217,6 @@ top:80vh;
 }
 @media (max-width: 500px) 
 {
-  body
-{
-  margin: 0;
-  background-color: black;
-    color: white;
-    position:relative;
-    font-family:  'Myriad_pro';
-    height:98vh;
-    width:99vw;
-    overflow: hidden;
-}
   #heading
 {
   display: block;
