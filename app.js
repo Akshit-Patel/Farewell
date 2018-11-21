@@ -19,7 +19,7 @@ var farewell=
 {
     team_name:["Backend","FrontEnd", "Backend","Video","App","Design"],
     details: {
-      name1:["Amritanshu", "Partho", "Deppak","Akaash", "Aditya ", "Rajat"],
+      name1:["Amritanshu", "Partho", "Deepak","Akaash", "Aditya ", "Rajat"],
       name2:["Jain", "Sarthi", "Kar", "Manna", "Raj", "Thakur"],
     },
     photos: [photo0, photo1, photo2, photo3, photo4, photo5]
