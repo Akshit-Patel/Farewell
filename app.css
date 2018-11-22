@@ -228,19 +228,18 @@ body
 {
   display: block;
   font-family:American_captain;
-  font-size:5vw;
+  font-size:4vw;
+  margin-top: 20px;
   color:white;
   right:20vw;
   top: 5vh;
-}
-#size {
-  font-size: 7vh;
 }
 .container #text #name2
 {
   display: block;
   font-family:American_captain;
-  font-size:5vw;
+  font-size:4vw;
+  margin-bottom: 20px;
   color:white;
   right:11.5vw;
   top: 16vh;
@@ -478,7 +477,8 @@ top:80vh;
 {
   display: block;
   font-family:Franklin_gothic1;
-  font-size:8vh;
+  font-size:6vh;
+  margin-top: 10px;
   color:white;
   right:10vh;
   top: 8vh;
@@ -492,7 +492,8 @@ top:80vh;
 {
   display: block;
   font-family:Franklin_gothic1;
-  font-size:8vh;
+  font-size:6vh;
+  margin-bottom: 10px;
   color:white;
   right:8.5vw;
   top: 16vh;
